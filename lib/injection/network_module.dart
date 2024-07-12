@@ -8,7 +8,7 @@ const dioClient = 'DIOCLIENT';
 Dio _createBaseDio() {
   final dio = Dio()
     ..httpClientAdapter = HttpClientAdapter()
-    ..options.baseUrl = 'base url' // TODO(ashrafulhc): Update the base url
+    ..options.baseUrl = 'http://baseUrl.com'
     ..options.contentType = 'application/json';
 
   return dio;
