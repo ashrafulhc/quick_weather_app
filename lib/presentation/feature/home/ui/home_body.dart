@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:quick_weather_app/presentation/feature/home/cubit/home_cubit.dart';
 import 'package:quick_weather_app/presentation/feature/home/ui/weather_widget.dart';
 
 class HomeBody extends StatelessWidget {
@@ -24,7 +26,9 @@ class HomeBody extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.read<HomeCubit>().getCurrentWeather();
+                  },
                   icon: const Icon(Icons.search),
                 ),
               ],

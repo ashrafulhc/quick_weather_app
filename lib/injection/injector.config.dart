@@ -17,7 +17,8 @@ import '../data/services/weather/source/remote/weather_remote_data_source.dart'
 import '../data/services/weather/weather_service_impl.dart' as _i6;
 import '../domain/services/weather/weather_service.dart' as _i5;
 import '../domain/use_cases/weather/get_current_weather_use_case.dart' as _i7;
-import 'network_module.dart' as _i8;
+import '../presentation/feature/home/cubit/home_cubit.dart' as _i8;
+import 'network_module.dart' as _i9;
 
 // initializes the registration of main-scope dependencies inside of GetIt
 _i1.GetIt $initGetIt(
@@ -41,7 +42,9 @@ _i1.GetIt $initGetIt(
       () => _i6.WeatherServiceImpl(gh<_i4.WeatherRemoteDataSource>()));
   gh.factory<_i7.GetCurrentWeatherUseCase>(
       () => _i7.GetCurrentWeatherUseCase(gh<_i5.WeatherService>()));
+  gh.factory<_i8.HomeCubit>(
+      () => _i8.HomeCubit(gh<_i7.GetCurrentWeatherUseCase>()));
   return getIt;
 }
 
-class _$NetworkModule extends _i8.NetworkModule {}
+class _$NetworkModule extends _i9.NetworkModule {}
