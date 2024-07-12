@@ -8,7 +8,7 @@ const dioClient = 'DIOCLIENT';
 Dio _createBaseDio() {
   final dio = Dio()
     ..httpClientAdapter = HttpClientAdapter()
-    ..options.baseUrl = 'http://baseUrl.com'
+    ..options.baseUrl = 'https://api.openweathermap.org/data/2.5'
     ..options.contentType = 'application/json';
 
   return dio;
