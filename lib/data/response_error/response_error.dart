@@ -32,7 +32,7 @@ class ResponseError<T> with _$ResponseError<T> implements Exception {
   const factory ResponseError.invalidPassword() = _InvalidPasswordError;
   const factory ResponseError.invalidConfirmPassword() =
       _InvalidConfirmPasswordError;
-  const factory ResponseError.invalidEmail() = _InvalidEmailError;
+  const factory ResponseError.invalidCityName() = _InvalidCityNameError;
   const factory ResponseError.invalidLoginCredentials() =
       _InvalidLoginCredentials;
   const factory ResponseError.invalidSearhTerm() = _InvalidSearchTermError;
@@ -101,7 +101,8 @@ extension ResponseErrorExtensions on ResponseError<void> {
           'Failed to receive response from server. Please try again later.',
       badRequest: () =>
           'Invalid request. Please check your input and try again.',
-      notFound: () => 'Resource not found. Please try again.',
+      notFound: () =>
+          'Resource not found. Please try again with a valid city name.',
       tooManyRequests: () =>
           "You've made too many requests in a short period. Please try again later.",
       unprocessableEntity: () =>
@@ -119,8 +120,7 @@ extension ResponseErrorExtensions on ResponseError<void> {
           'The password you entered is invalid. Please check your password and try again.',
       invalidConfirmPassword: () =>
           'Password confirmation is invalid. Please check your confirmation password and try again.',
-      invalidEmail: () =>
-          'The email address you entered is invalid. Please check your email address and try again.',
+      invalidCityName: () => 'Please enter a valid City Name.',
       invalidSearhTerm: () =>
           'The search term you entered is invalid. Please try a different search term.',
       invalidLoginCredentials: () =>
