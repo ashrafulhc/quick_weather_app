@@ -10,7 +10,6 @@ class WeatherIconWidget extends StatelessWidget {
   final WeatherEntity? weatherEntity;
 
   String _getAssetName(int weatherIdCode) {
-    print(weatherIdCode);
     // the codes are collected from the following docs
     // https://openweathermap.org/weather-conditions
 
