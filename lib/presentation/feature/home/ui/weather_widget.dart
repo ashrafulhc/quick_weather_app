@@ -17,7 +17,10 @@ class WeatherWidget extends StatelessWidget {
     return isLoading
         ? const Text('Loading...Please wait')
         : weatherEntity == null
-            ? const Text('Please Enter a valid city name')
+            ? const Padding(
+                padding: EdgeInsets.all(50),
+                child: Text('Please Enter a valid city name'),
+              )
             : Column(
                 children: [
                   WeatherIconWidget(

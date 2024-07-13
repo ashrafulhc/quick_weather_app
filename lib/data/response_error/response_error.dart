@@ -15,6 +15,7 @@ class ResponseError<T> with _$ResponseError<T> implements Exception {
   const ResponseError._();
 
   const factory ResponseError.noInternetConnection() = _NoInternetConnection;
+  const factory ResponseError.apiKeyNotFound() = _ApiKeyNotFound;
   const factory ResponseError.sendTimeout() = _SendTimeout;
   const factory ResponseError.connectTimeout() = _ConnectTimeout;
   const factory ResponseError.receiveTimeout() = _ReceiveTimeout;
@@ -94,6 +95,7 @@ extension ResponseErrorExtensions on ResponseError<void> {
     return when<String>(
       noInternetConnection: () =>
           'No internet connection. Please check your connection and try again.',
+      apiKeyNotFound: () => 'Api key is not set',
       sendTimeout: () => 'Request timed out. Please try again later.',
       connectTimeout: () =>
           'Connection timed out. Please check your connection and try again.',

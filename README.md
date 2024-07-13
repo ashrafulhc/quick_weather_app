@@ -22,20 +22,22 @@ To run the desired flavor either use the launch configuration in VSCode/Android 
 
 ```sh
 # Development
-$ flutter run --flavor development --target lib/main_development.dart
+$ flutter run --flavor development --target lib/main_development.dart --dart-define API_KEY=d719864e996c31de59da5d5bb5aad7ce
 
 # Staging
-$ flutter run --flavor staging --target lib/main_staging.dart
+$ flutter run --flavor staging --target lib/main_staging.dart --dart-define API_KEY=d719864e996c31de59da5d5bb5aad7ce
 
 # Production
-$ flutter run --flavor production --target lib/main_production.dart
+$ flutter run --flavor production --target lib/main_production.dart --dart-define API_KEY=d719864e996c31de59da5d5bb5aad7ce
 ```
 
-_\*Quick Weather App works on iOS, Android, Web, and Windows._
+To run the app, you must provide an API_KEY through additional command arguments; otherwise, an ApiKeyNotFound exception will be thrown. For demonstration purposes, the key is provided here along with instructions on how to run the app with the API key.
+
+_\*Quick Weather App works on iOS, Android._
 
 ---
 
-## Running Tests 🧪
+## Running Tests (Not Implemented) 🧪
 
 To run all unit and widget tests use the following command:
 
@@ -55,7 +57,7 @@ $ open coverage/index.html
 
 ---
 
-## Working with Translations 🌐
+## Working with Translations 🌐 (Not Implemented)
 
 This project relies on [flutter_localizations][flutter_localizations_link] and follows the [official internationalization guide for Flutter][internationalization_link].
 

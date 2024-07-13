@@ -19,6 +19,7 @@ mixin _$ResponseError<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -43,6 +44,7 @@ mixin _$ResponseError<T> {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -67,6 +69,7 @@ mixin _$ResponseError<T> {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -93,6 +96,7 @@ mixin _$ResponseError<T> {
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -122,6 +126,7 @@ mixin _$ResponseError<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -148,6 +153,7 @@ mixin _$ResponseError<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -241,6 +247,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -268,6 +275,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -295,6 +303,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -327,6 +336,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -359,6 +369,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -388,6 +399,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -421,6 +433,241 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
 abstract class _NoInternetConnection<T> extends ResponseError<T> {
   const factory _NoInternetConnection() = _$NoInternetConnectionImpl<T>;
   const _NoInternetConnection._() : super._();
+}
+
+/// @nodoc
+abstract class _$$ApiKeyNotFoundImplCopyWith<T, $Res> {
+  factory _$$ApiKeyNotFoundImplCopyWith(_$ApiKeyNotFoundImpl<T> value,
+          $Res Function(_$ApiKeyNotFoundImpl<T>) then) =
+      __$$ApiKeyNotFoundImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$ApiKeyNotFoundImplCopyWithImpl<T, $Res>
+    extends _$ResponseErrorCopyWithImpl<T, $Res, _$ApiKeyNotFoundImpl<T>>
+    implements _$$ApiKeyNotFoundImplCopyWith<T, $Res> {
+  __$$ApiKeyNotFoundImplCopyWithImpl(_$ApiKeyNotFoundImpl<T> _value,
+      $Res Function(_$ApiKeyNotFoundImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$ApiKeyNotFoundImpl<T> extends _ApiKeyNotFound<T>
+    with DiagnosticableTreeMixin {
+  const _$ApiKeyNotFoundImpl() : super._();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'ResponseError<$T>.apiKeyNotFound()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.apiKeyNotFound'));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ApiKeyNotFoundImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
+    required TResult Function() sendTimeout,
+    required TResult Function() connectTimeout,
+    required TResult Function() receiveTimeout,
+    required TResult Function() badRequest,
+    required TResult Function() notFound,
+    required TResult Function() tooManyRequests,
+    required TResult Function() unprocessableEntity,
+    required TResult Function() internalServerError,
+    required TResult Function() unexpectedError,
+    required TResult Function() requestCancelled,
+    required TResult Function() badCertificate,
+    required TResult Function() connectionError,
+    required TResult Function() conflict,
+    required TResult Function() unauthorized,
+    required TResult Function() invalidPassword,
+    required TResult Function() invalidConfirmPassword,
+    required TResult Function() invalidCityName,
+    required TResult Function() invalidLoginCredentials,
+    required TResult Function() invalidSearhTerm,
+  }) {
+    return apiKeyNotFound();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
+    TResult? Function()? sendTimeout,
+    TResult? Function()? connectTimeout,
+    TResult? Function()? receiveTimeout,
+    TResult? Function()? badRequest,
+    TResult? Function()? notFound,
+    TResult? Function()? tooManyRequests,
+    TResult? Function()? unprocessableEntity,
+    TResult? Function()? internalServerError,
+    TResult? Function()? unexpectedError,
+    TResult? Function()? requestCancelled,
+    TResult? Function()? badCertificate,
+    TResult? Function()? connectionError,
+    TResult? Function()? conflict,
+    TResult? Function()? unauthorized,
+    TResult? Function()? invalidPassword,
+    TResult? Function()? invalidConfirmPassword,
+    TResult? Function()? invalidCityName,
+    TResult? Function()? invalidLoginCredentials,
+    TResult? Function()? invalidSearhTerm,
+  }) {
+    return apiKeyNotFound?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
+    TResult Function()? sendTimeout,
+    TResult Function()? connectTimeout,
+    TResult Function()? receiveTimeout,
+    TResult Function()? badRequest,
+    TResult Function()? notFound,
+    TResult Function()? tooManyRequests,
+    TResult Function()? unprocessableEntity,
+    TResult Function()? internalServerError,
+    TResult Function()? unexpectedError,
+    TResult Function()? requestCancelled,
+    TResult Function()? badCertificate,
+    TResult Function()? connectionError,
+    TResult Function()? conflict,
+    TResult Function()? unauthorized,
+    TResult Function()? invalidPassword,
+    TResult Function()? invalidConfirmPassword,
+    TResult Function()? invalidCityName,
+    TResult Function()? invalidLoginCredentials,
+    TResult Function()? invalidSearhTerm,
+    required TResult orElse(),
+  }) {
+    if (apiKeyNotFound != null) {
+      return apiKeyNotFound();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_NoInternetConnection<T> value)
+        noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
+    required TResult Function(_SendTimeout<T> value) sendTimeout,
+    required TResult Function(_ConnectTimeout<T> value) connectTimeout,
+    required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
+    required TResult Function(_BadRequest<T> value) badRequest,
+    required TResult Function(_NotFound<T> value) notFound,
+    required TResult Function(_TooManyRequests<T> value) tooManyRequests,
+    required TResult Function(_UnprocessableEntity<T> value)
+        unprocessableEntity,
+    required TResult Function(_InternalServerError<T> value)
+        internalServerError,
+    required TResult Function(_UnexpectedError<T> value) unexpectedError,
+    required TResult Function(_RequestCancelled<T> value) requestCancelled,
+    required TResult Function(_BedCertificate<T> value) badCertificate,
+    required TResult Function(_ConnectionError<T> value) connectionError,
+    required TResult Function(_Conflict<T> value) conflict,
+    required TResult Function(_Unauthorized<T> value) unauthorized,
+    required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
+    required TResult Function(_InvalidConfirmPasswordError<T> value)
+        invalidConfirmPassword,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
+    required TResult Function(_InvalidLoginCredentials<T> value)
+        invalidLoginCredentials,
+    required TResult Function(_InvalidSearchTermError<T> value)
+        invalidSearhTerm,
+  }) {
+    return apiKeyNotFound(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
+    TResult? Function(_SendTimeout<T> value)? sendTimeout,
+    TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
+    TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
+    TResult? Function(_BadRequest<T> value)? badRequest,
+    TResult? Function(_NotFound<T> value)? notFound,
+    TResult? Function(_TooManyRequests<T> value)? tooManyRequests,
+    TResult? Function(_UnprocessableEntity<T> value)? unprocessableEntity,
+    TResult? Function(_InternalServerError<T> value)? internalServerError,
+    TResult? Function(_UnexpectedError<T> value)? unexpectedError,
+    TResult? Function(_RequestCancelled<T> value)? requestCancelled,
+    TResult? Function(_BedCertificate<T> value)? badCertificate,
+    TResult? Function(_ConnectionError<T> value)? connectionError,
+    TResult? Function(_Conflict<T> value)? conflict,
+    TResult? Function(_Unauthorized<T> value)? unauthorized,
+    TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
+    TResult? Function(_InvalidConfirmPasswordError<T> value)?
+        invalidConfirmPassword,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
+    TResult? Function(_InvalidLoginCredentials<T> value)?
+        invalidLoginCredentials,
+    TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
+  }) {
+    return apiKeyNotFound?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
+    TResult Function(_SendTimeout<T> value)? sendTimeout,
+    TResult Function(_ConnectTimeout<T> value)? connectTimeout,
+    TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
+    TResult Function(_BadRequest<T> value)? badRequest,
+    TResult Function(_NotFound<T> value)? notFound,
+    TResult Function(_TooManyRequests<T> value)? tooManyRequests,
+    TResult Function(_UnprocessableEntity<T> value)? unprocessableEntity,
+    TResult Function(_InternalServerError<T> value)? internalServerError,
+    TResult Function(_UnexpectedError<T> value)? unexpectedError,
+    TResult Function(_RequestCancelled<T> value)? requestCancelled,
+    TResult Function(_BedCertificate<T> value)? badCertificate,
+    TResult Function(_ConnectionError<T> value)? connectionError,
+    TResult Function(_Conflict<T> value)? conflict,
+    TResult Function(_Unauthorized<T> value)? unauthorized,
+    TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
+    TResult Function(_InvalidConfirmPasswordError<T> value)?
+        invalidConfirmPassword,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
+    TResult Function(_InvalidLoginCredentials<T> value)?
+        invalidLoginCredentials,
+    TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
+    required TResult orElse(),
+  }) {
+    if (apiKeyNotFound != null) {
+      return apiKeyNotFound(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ApiKeyNotFound<T> extends ResponseError<T> {
+  const factory _ApiKeyNotFound() = _$ApiKeyNotFoundImpl<T>;
+  const _ApiKeyNotFound._() : super._();
 }
 
 /// @nodoc
@@ -470,6 +717,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -497,6 +745,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -524,6 +773,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -556,6 +806,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -588,6 +839,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -617,6 +869,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -699,6 +952,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -726,6 +980,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -753,6 +1008,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -785,6 +1041,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -817,6 +1074,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -846,6 +1104,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -928,6 +1187,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -955,6 +1215,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -982,6 +1243,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -1014,6 +1276,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -1046,6 +1309,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1075,6 +1339,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1155,6 +1420,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -1182,6 +1448,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -1209,6 +1476,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -1241,6 +1509,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -1273,6 +1542,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1302,6 +1572,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1382,6 +1653,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -1409,6 +1681,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -1436,6 +1709,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -1468,6 +1742,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -1500,6 +1775,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1529,6 +1805,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1611,6 +1888,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -1638,6 +1916,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -1665,6 +1944,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -1697,6 +1977,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -1729,6 +2010,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1758,6 +2040,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1841,6 +2124,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -1868,6 +2152,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -1895,6 +2180,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -1927,6 +2213,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -1959,6 +2246,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -1988,6 +2276,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2071,6 +2360,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -2098,6 +2388,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -2125,6 +2416,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -2157,6 +2449,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -2189,6 +2482,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2218,6 +2512,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2300,6 +2595,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -2327,6 +2623,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -2354,6 +2651,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -2386,6 +2684,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -2418,6 +2717,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2447,6 +2747,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2530,6 +2831,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -2557,6 +2859,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -2584,6 +2887,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -2616,6 +2920,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -2648,6 +2953,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2677,6 +2983,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2759,6 +3066,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -2786,6 +3094,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -2813,6 +3122,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -2845,6 +3155,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -2877,6 +3188,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2906,6 +3218,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -2988,6 +3301,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -3015,6 +3329,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -3042,6 +3357,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -3074,6 +3390,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -3106,6 +3423,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3135,6 +3453,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3215,6 +3534,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -3242,6 +3562,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -3269,6 +3590,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -3301,6 +3623,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -3333,6 +3656,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3362,6 +3686,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3444,6 +3769,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -3471,6 +3797,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -3498,6 +3825,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -3530,6 +3858,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -3562,6 +3891,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3591,6 +3921,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3675,6 +4006,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -3702,6 +4034,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -3729,6 +4062,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -3761,6 +4095,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -3793,6 +4128,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3822,6 +4158,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -3908,6 +4245,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -3935,6 +4273,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -3962,6 +4301,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -3994,6 +4334,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -4026,6 +4367,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -4055,6 +4397,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -4140,6 +4483,7 @@ class _$InvalidCityNameErrorImpl<T> extends _InvalidCityNameError<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -4167,6 +4511,7 @@ class _$InvalidCityNameErrorImpl<T> extends _InvalidCityNameError<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -4194,6 +4539,7 @@ class _$InvalidCityNameErrorImpl<T> extends _InvalidCityNameError<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -4226,6 +4572,7 @@ class _$InvalidCityNameErrorImpl<T> extends _InvalidCityNameError<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -4258,6 +4605,7 @@ class _$InvalidCityNameErrorImpl<T> extends _InvalidCityNameError<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -4287,6 +4635,7 @@ class _$InvalidCityNameErrorImpl<T> extends _InvalidCityNameError<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -4373,6 +4722,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -4400,6 +4750,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -4427,6 +4778,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -4459,6 +4811,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -4491,6 +4844,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -4520,6 +4874,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -4606,6 +4961,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noInternetConnection,
+    required TResult Function() apiKeyNotFound,
     required TResult Function() sendTimeout,
     required TResult Function() connectTimeout,
     required TResult Function() receiveTimeout,
@@ -4633,6 +4989,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noInternetConnection,
+    TResult? Function()? apiKeyNotFound,
     TResult? Function()? sendTimeout,
     TResult? Function()? connectTimeout,
     TResult? Function()? receiveTimeout,
@@ -4660,6 +5017,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noInternetConnection,
+    TResult Function()? apiKeyNotFound,
     TResult Function()? sendTimeout,
     TResult Function()? connectTimeout,
     TResult Function()? receiveTimeout,
@@ -4692,6 +5050,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
   TResult map<TResult extends Object?>({
     required TResult Function(_NoInternetConnection<T> value)
         noInternetConnection,
+    required TResult Function(_ApiKeyNotFound<T> value) apiKeyNotFound,
     required TResult Function(_SendTimeout<T> value) sendTimeout,
     required TResult Function(_ConnectTimeout<T> value) connectTimeout,
     required TResult Function(_ReceiveTimeout<T> value) receiveTimeout,
@@ -4724,6 +5083,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult? Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult? Function(_SendTimeout<T> value)? sendTimeout,
     TResult? Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult? Function(_ReceiveTimeout<T> value)? receiveTimeout,
@@ -4753,6 +5113,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_NoInternetConnection<T> value)? noInternetConnection,
+    TResult Function(_ApiKeyNotFound<T> value)? apiKeyNotFound,
     TResult Function(_SendTimeout<T> value)? sendTimeout,
     TResult Function(_ConnectTimeout<T> value)? connectTimeout,
     TResult Function(_ReceiveTimeout<T> value)? receiveTimeout,
