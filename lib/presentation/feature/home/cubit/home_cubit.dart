@@ -32,31 +32,21 @@ class HomeCubit extends Cubit<HomeState> {
     try {
       emit(state.copyWith(initStatus: const BaseStatus.loading()));
 
-      // if (state.passwordValidationErrors.isNotEmpty || newPassword.isEmpty) {
-      //   emit(
-      //     state.copyWith(
-      //       initStatus: const BaseStatus.failure(
-      //         ResponseError.invalidPassword(),
-      //       ),
-      //     ),
-      //   );
-      //   return;
-      // }
+      if (state.cityName.isEmpty) {
+        emit(
+          state.copyWith(
+            initStatus: const BaseStatus.failure(
+              ResponseError.invalidCityName(),
+            ),
+          ),
+        );
 
-      // if (!state.confirmPasswordStatus.isValid || confirmNewPassword.isEmpty) {
-      //   emit(
-      //     state.copyWith(
-      //       initStatus: const BaseStatus.failure(
-      //         ResponseError.invalidConfirmPassword(),
-      //       ),
-      //     ),
-      //   );
-      //   return;
-      // }
+        return;
+      }
 
       log('fetching weather ...');
 
-      final cityName = 'Los Angeles';
+      final cityName = state.cityName;
 
       final response = await _getCurrentWeatherUseCase.run(cityName: cityName);
 

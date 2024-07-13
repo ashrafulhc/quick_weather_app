@@ -1,17 +1,48 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:quick_weather_app/domain/entities/weather_entity.dart';
+import 'package:quick_weather_app/presentation/feature/home/ui/weather_icon_widget.dart';
 
 class WeatherWidget extends StatelessWidget {
-  const WeatherWidget({super.key});
+  const WeatherWidget({
+    required this.weatherEntity,
+    required this.isLoading,
+    super.key,
+  });
+
+  final WeatherEntity? weatherEntity;
+  final bool isLoading;
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Text('City Name: Dhaka'),
-        Text('Temperature: 36'),
-        Icon(Icons.sunny),
-      ],
-    );
+    return isLoading
+        ? const Text('Loading...Please wait')
+        : weatherEntity == null
+            ? const Text('Please Enter a valid city name')
+            : Column(
+                children: [
+                  WeatherIconWidget(
+                    weatherEntity: weatherEntity,
+                  ),
+                  Text(
+                    '${weatherEntity?.name}',
+                    style: const TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  Text(
+                    '${weatherEntity?.main?.temp}\u2103',
+                    style: const TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    '${weatherEntity?.weather?.first.main}',
+                    style: const TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
+              );
   }
 }

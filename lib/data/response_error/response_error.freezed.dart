@@ -35,7 +35,7 @@ mixin _$ResponseError<T> {
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) =>
@@ -59,7 +59,7 @@ mixin _$ResponseError<T> {
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) =>
@@ -83,7 +83,7 @@ mixin _$ResponseError<T> {
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -112,7 +112,7 @@ mixin _$ResponseError<T> {
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -139,7 +139,7 @@ mixin _$ResponseError<T> {
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -165,7 +165,7 @@ mixin _$ResponseError<T> {
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -257,7 +257,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -284,7 +284,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -311,7 +311,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -346,7 +346,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -376,7 +376,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -405,7 +405,7 @@ class _$NoInternetConnectionImpl<T> extends _NoInternetConnection<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -486,7 +486,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -513,7 +513,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -540,7 +540,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -575,7 +575,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -605,7 +605,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -634,7 +634,7 @@ class _$SendTimeoutImpl<T> extends _SendTimeout<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -715,7 +715,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -742,7 +742,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -769,7 +769,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -804,7 +804,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -834,7 +834,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -863,7 +863,7 @@ class _$ConnectTimeoutImpl<T> extends _ConnectTimeout<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -944,7 +944,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -971,7 +971,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -998,7 +998,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -1033,7 +1033,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -1063,7 +1063,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1092,7 +1092,7 @@ class _$ReceiveTimeoutImpl<T> extends _ReceiveTimeout<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1171,7 +1171,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -1198,7 +1198,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -1225,7 +1225,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -1260,7 +1260,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -1290,7 +1290,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1319,7 +1319,7 @@ class _$BadRequestImpl<T> extends _BadRequest<T> with DiagnosticableTreeMixin {
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1398,7 +1398,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -1425,7 +1425,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -1452,7 +1452,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -1487,7 +1487,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -1517,7 +1517,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1546,7 +1546,7 @@ class _$NotFoundImpl<T> extends _NotFound<T> with DiagnosticableTreeMixin {
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1627,7 +1627,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -1654,7 +1654,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -1681,7 +1681,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -1716,7 +1716,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -1746,7 +1746,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1775,7 +1775,7 @@ class _$TooManyRequestsImpl<T> extends _TooManyRequests<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -1857,7 +1857,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -1884,7 +1884,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -1911,7 +1911,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -1946,7 +1946,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -1976,7 +1976,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2005,7 +2005,7 @@ class _$UnprocessableEntityImpl<T> extends _UnprocessableEntity<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2087,7 +2087,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -2114,7 +2114,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -2141,7 +2141,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -2176,7 +2176,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -2206,7 +2206,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2235,7 +2235,7 @@ class _$InternalServerErrorImpl<T> extends _InternalServerError<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2316,7 +2316,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -2343,7 +2343,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -2370,7 +2370,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -2405,7 +2405,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -2435,7 +2435,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2464,7 +2464,7 @@ class _$UnexpectedErrorImpl<T> extends _UnexpectedError<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2546,7 +2546,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -2573,7 +2573,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -2600,7 +2600,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -2635,7 +2635,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -2665,7 +2665,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2694,7 +2694,7 @@ class _$RequestCancelledImpl<T> extends _RequestCancelled<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2775,7 +2775,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -2802,7 +2802,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -2829,7 +2829,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -2864,7 +2864,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -2894,7 +2894,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -2923,7 +2923,7 @@ class _$BedCertificateImpl<T> extends _BedCertificate<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3004,7 +3004,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -3031,7 +3031,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -3058,7 +3058,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -3093,7 +3093,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -3123,7 +3123,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3152,7 +3152,7 @@ class _$ConnectionErrorImpl<T> extends _ConnectionError<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3231,7 +3231,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -3258,7 +3258,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -3285,7 +3285,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -3320,7 +3320,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -3350,7 +3350,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3379,7 +3379,7 @@ class _$ConflictImpl<T> extends _Conflict<T> with DiagnosticableTreeMixin {
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3460,7 +3460,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -3487,7 +3487,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -3514,7 +3514,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -3549,7 +3549,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -3579,7 +3579,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3608,7 +3608,7 @@ class _$UnauthorizedImpl<T> extends _Unauthorized<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3691,7 +3691,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -3718,7 +3718,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -3745,7 +3745,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -3780,7 +3780,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -3810,7 +3810,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3839,7 +3839,7 @@ class _$InvalidPasswordErrorImpl<T> extends _InvalidPasswordError<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -3924,7 +3924,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -3951,7 +3951,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -3978,7 +3978,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -4013,7 +4013,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -4043,7 +4043,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -4072,7 +4072,7 @@ class _$InvalidConfirmPasswordErrorImpl<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -4092,44 +4092,45 @@ abstract class _InvalidConfirmPasswordError<T> extends ResponseError<T> {
 }
 
 /// @nodoc
-abstract class _$$InvalidEmailErrorImplCopyWith<T, $Res> {
-  factory _$$InvalidEmailErrorImplCopyWith(_$InvalidEmailErrorImpl<T> value,
-          $Res Function(_$InvalidEmailErrorImpl<T>) then) =
-      __$$InvalidEmailErrorImplCopyWithImpl<T, $Res>;
+abstract class _$$InvalidCityNameErrorImplCopyWith<T, $Res> {
+  factory _$$InvalidCityNameErrorImplCopyWith(
+          _$InvalidCityNameErrorImpl<T> value,
+          $Res Function(_$InvalidCityNameErrorImpl<T>) then) =
+      __$$InvalidCityNameErrorImplCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$$InvalidEmailErrorImplCopyWithImpl<T, $Res>
-    extends _$ResponseErrorCopyWithImpl<T, $Res, _$InvalidEmailErrorImpl<T>>
-    implements _$$InvalidEmailErrorImplCopyWith<T, $Res> {
-  __$$InvalidEmailErrorImplCopyWithImpl(_$InvalidEmailErrorImpl<T> _value,
-      $Res Function(_$InvalidEmailErrorImpl<T>) _then)
+class __$$InvalidCityNameErrorImplCopyWithImpl<T, $Res>
+    extends _$ResponseErrorCopyWithImpl<T, $Res, _$InvalidCityNameErrorImpl<T>>
+    implements _$$InvalidCityNameErrorImplCopyWith<T, $Res> {
+  __$$InvalidCityNameErrorImplCopyWithImpl(_$InvalidCityNameErrorImpl<T> _value,
+      $Res Function(_$InvalidCityNameErrorImpl<T>) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InvalidEmailErrorImpl<T> extends _InvalidEmailError<T>
+class _$InvalidCityNameErrorImpl<T> extends _InvalidCityNameError<T>
     with DiagnosticableTreeMixin {
-  const _$InvalidEmailErrorImpl() : super._();
+  const _$InvalidCityNameErrorImpl() : super._();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'ResponseError<$T>.invalidEmail()';
+    return 'ResponseError<$T>.invalidCityName()';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-        .add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidEmail'));
+        .add(DiagnosticsProperty('type', 'ResponseError<$T>.invalidCityName'));
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$InvalidEmailErrorImpl<T>);
+            other is _$InvalidCityNameErrorImpl<T>);
   }
 
   @override
@@ -4155,11 +4156,11 @@ class _$InvalidEmailErrorImpl<T> extends _InvalidEmailError<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
-    return invalidEmail();
+    return invalidCityName();
   }
 
   @override
@@ -4182,11 +4183,11 @@ class _$InvalidEmailErrorImpl<T> extends _InvalidEmailError<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
-    return invalidEmail?.call();
+    return invalidCityName?.call();
   }
 
   @override
@@ -4209,13 +4210,13 @@ class _$InvalidEmailErrorImpl<T> extends _InvalidEmailError<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
   }) {
-    if (invalidEmail != null) {
-      return invalidEmail();
+    if (invalidCityName != null) {
+      return invalidCityName();
     }
     return orElse();
   }
@@ -4244,13 +4245,13 @@ class _$InvalidEmailErrorImpl<T> extends _InvalidEmailError<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
         invalidSearhTerm,
   }) {
-    return invalidEmail(this);
+    return invalidCityName(this);
   }
 
   @override
@@ -4274,12 +4275,12 @@ class _$InvalidEmailErrorImpl<T> extends _InvalidEmailError<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
   }) {
-    return invalidEmail?.call(this);
+    return invalidCityName?.call(this);
   }
 
   @override
@@ -4303,22 +4304,22 @@ class _$InvalidEmailErrorImpl<T> extends _InvalidEmailError<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
     required TResult orElse(),
   }) {
-    if (invalidEmail != null) {
-      return invalidEmail(this);
+    if (invalidCityName != null) {
+      return invalidCityName(this);
     }
     return orElse();
   }
 }
 
-abstract class _InvalidEmailError<T> extends ResponseError<T> {
-  const factory _InvalidEmailError() = _$InvalidEmailErrorImpl<T>;
-  const _InvalidEmailError._() : super._();
+abstract class _InvalidCityNameError<T> extends ResponseError<T> {
+  const factory _InvalidCityNameError() = _$InvalidCityNameErrorImpl<T>;
+  const _InvalidCityNameError._() : super._();
 }
 
 /// @nodoc
@@ -4388,7 +4389,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -4415,7 +4416,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -4442,7 +4443,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -4477,7 +4478,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -4507,7 +4508,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -4536,7 +4537,7 @@ class _$InvalidLoginCredentialsImpl<T> extends _InvalidLoginCredentials<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -4621,7 +4622,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
     required TResult Function() unauthorized,
     required TResult Function() invalidPassword,
     required TResult Function() invalidConfirmPassword,
-    required TResult Function() invalidEmail,
+    required TResult Function() invalidCityName,
     required TResult Function() invalidLoginCredentials,
     required TResult Function() invalidSearhTerm,
   }) {
@@ -4648,7 +4649,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
     TResult? Function()? unauthorized,
     TResult? Function()? invalidPassword,
     TResult? Function()? invalidConfirmPassword,
-    TResult? Function()? invalidEmail,
+    TResult? Function()? invalidCityName,
     TResult? Function()? invalidLoginCredentials,
     TResult? Function()? invalidSearhTerm,
   }) {
@@ -4675,7 +4676,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
     TResult Function()? unauthorized,
     TResult Function()? invalidPassword,
     TResult Function()? invalidConfirmPassword,
-    TResult Function()? invalidEmail,
+    TResult Function()? invalidCityName,
     TResult Function()? invalidLoginCredentials,
     TResult Function()? invalidSearhTerm,
     required TResult orElse(),
@@ -4710,7 +4711,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
     required TResult Function(_InvalidPasswordError<T> value) invalidPassword,
     required TResult Function(_InvalidConfirmPasswordError<T> value)
         invalidConfirmPassword,
-    required TResult Function(_InvalidEmailError<T> value) invalidEmail,
+    required TResult Function(_InvalidCityNameError<T> value) invalidCityName,
     required TResult Function(_InvalidLoginCredentials<T> value)
         invalidLoginCredentials,
     required TResult Function(_InvalidSearchTermError<T> value)
@@ -4740,7 +4741,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
     TResult? Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult? Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult? Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult? Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult? Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult? Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
@@ -4769,7 +4770,7 @@ class _$InvalidSearchTermErrorImpl<T> extends _InvalidSearchTermError<T>
     TResult Function(_InvalidPasswordError<T> value)? invalidPassword,
     TResult Function(_InvalidConfirmPasswordError<T> value)?
         invalidConfirmPassword,
-    TResult Function(_InvalidEmailError<T> value)? invalidEmail,
+    TResult Function(_InvalidCityNameError<T> value)? invalidCityName,
     TResult Function(_InvalidLoginCredentials<T> value)?
         invalidLoginCredentials,
     TResult Function(_InvalidSearchTermError<T> value)? invalidSearhTerm,
