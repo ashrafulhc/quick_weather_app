@@ -15,7 +15,10 @@ class WeatherWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return isLoading
-        ? const Text('Loading...Please wait')
+        ? const Padding(
+            padding: EdgeInsets.all(50),
+            child: Text('Loading! Please Wait...'),
+          )
         : weatherEntity == null
             ? const Padding(
                 padding: EdgeInsets.all(50),
