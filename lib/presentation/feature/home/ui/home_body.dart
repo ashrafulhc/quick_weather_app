@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quick_weather_app/data/response_error/response_error.dart';
 import 'package:quick_weather_app/presentation/feature/home/cubit/home_cubit.dart';
+import 'package:quick_weather_app/presentation/feature/home/ui/fav_cities_widget.dart';
 import 'package:quick_weather_app/presentation/feature/home/ui/weather_widget.dart';
 import 'package:quick_weather_app/presentation/widgets/app_loading_indicator.dart/app_loading_indicator.dart';
 import 'package:quick_weather_app/presentation/widgets/app_snack_bar/app_snack_bar.dart';
@@ -38,6 +39,16 @@ class HomeBody extends StatelessWidget {
       child: FocusScopeDismissible(
         child: Scaffold(
           appBar: AppBar(
+            leading: Builder(
+              builder: (context) {
+                return IconButton(
+                  icon: const Icon(Icons.menu),
+                  onPressed: () {
+                    Scaffold.of(context).openDrawer();
+                  },
+                );
+              },
+            ),
             backgroundColor: Colors.transparent,
             elevation: 0,
           ),
@@ -72,6 +83,19 @@ class HomeBody extends StatelessWidget {
                       ),
                   ],
                 ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    context.read<HomeCubit>().makeCityFavorite();
+                  },
+                  child: const Text('Make the city favorite'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    _showBottomSheet(context);
+                  },
+                  child: const Text('Show Bottom Sheet'),
+                ),
                 WeatherWidget(
                   isLoading: isLoading,
                   weatherEntity: weatherEntity,
@@ -79,8 +103,46 @@ class HomeBody extends StatelessWidget {
               ],
             ),
           ),
+          drawer: const Drawer(
+            backgroundColor: Color.fromARGB(255, 182, 185, 182),
+            child: FavCitiesWidget(),
+          ),
         ),
       ),
+    );
+  }
+
+  void _showBottomSheet(BuildContext prevContext) {
+    showModalBottomSheet<void>(
+      context: prevContext,
+      builder: (BuildContext context) {
+        return BlocProvider.value(
+          value: prevContext.read<HomeCubit>(),
+          child: BlocBuilder<HomeCubit, HomeState>(
+            builder: (context, state) {
+              return ListView.builder(
+                padding: EdgeInsets.zero,
+                itemCount: state.favCities.length,
+                itemBuilder: (context, index) {
+                  final city = state.favCities[index];
+                  return ListTile(
+                    title: Text(city),
+                    trailing: IconButton(
+                      icon: const Icon(Icons.close),
+                      onPressed: () {
+                        prevContext.read<HomeCubit>().makeCityUnfavorite(city);
+                      },
+                    ),
+                    onTap: () {
+                      print('Tile tapped for $city');
+                    },
+                  );
+                },
+              );
+            },
+          ),
+        );
+      },
     );
   }
 }

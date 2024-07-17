@@ -17,6 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$HomeState {
   WeatherEntity? get weatherEntity => throw _privateConstructorUsedError;
+  List<String> get favCities => throw _privateConstructorUsedError;
   String get cityName => throw _privateConstructorUsedError;
   BaseStatus<dynamic> get initStatus => throw _privateConstructorUsedError;
 
@@ -32,6 +33,7 @@ abstract class $HomeStateCopyWith<$Res> {
   @useResult
   $Res call(
       {WeatherEntity? weatherEntity,
+      List<String> favCities,
       String cityName,
       BaseStatus<dynamic> initStatus});
 
@@ -53,6 +55,7 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
   @override
   $Res call({
     Object? weatherEntity = freezed,
+    Object? favCities = null,
     Object? cityName = null,
     Object? initStatus = null,
   }) {
@@ -61,6 +64,10 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
           ? _value.weatherEntity
           : weatherEntity // ignore: cast_nullable_to_non_nullable
               as WeatherEntity?,
+      favCities: null == favCities
+          ? _value.favCities
+          : favCities // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       cityName: null == cityName
           ? _value.cityName
           : cityName // ignore: cast_nullable_to_non_nullable
@@ -103,6 +110,7 @@ abstract class _$$HomeStateImplCopyWith<$Res>
   @useResult
   $Res call(
       {WeatherEntity? weatherEntity,
+      List<String> favCities,
       String cityName,
       BaseStatus<dynamic> initStatus});
 
@@ -124,6 +132,7 @@ class __$$HomeStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? weatherEntity = freezed,
+    Object? favCities = null,
     Object? cityName = null,
     Object? initStatus = null,
   }) {
@@ -132,6 +141,10 @@ class __$$HomeStateImplCopyWithImpl<$Res>
           ? _value.weatherEntity
           : weatherEntity // ignore: cast_nullable_to_non_nullable
               as WeatherEntity?,
+      favCities: null == favCities
+          ? _value._favCities
+          : favCities // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       cityName: null == cityName
           ? _value.cityName
           : cityName // ignore: cast_nullable_to_non_nullable
@@ -149,11 +162,22 @@ class __$$HomeStateImplCopyWithImpl<$Res>
 class _$HomeStateImpl implements _HomeState {
   const _$HomeStateImpl(
       {this.weatherEntity,
+      final List<String> favCities = const [],
       this.cityName = '',
-      this.initStatus = const BaseStatus.initial()});
+      this.initStatus = const BaseStatus.initial()})
+      : _favCities = favCities;
 
   @override
   final WeatherEntity? weatherEntity;
+  final List<String> _favCities;
+  @override
+  @JsonKey()
+  List<String> get favCities {
+    if (_favCities is EqualUnmodifiableListView) return _favCities;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_favCities);
+  }
+
   @override
   @JsonKey()
   final String cityName;
@@ -163,7 +187,7 @@ class _$HomeStateImpl implements _HomeState {
 
   @override
   String toString() {
-    return 'HomeState(weatherEntity: $weatherEntity, cityName: $cityName, initStatus: $initStatus)';
+    return 'HomeState(weatherEntity: $weatherEntity, favCities: $favCities, cityName: $cityName, initStatus: $initStatus)';
   }
 
   @override
@@ -173,6 +197,8 @@ class _$HomeStateImpl implements _HomeState {
             other is _$HomeStateImpl &&
             (identical(other.weatherEntity, weatherEntity) ||
                 other.weatherEntity == weatherEntity) &&
+            const DeepCollectionEquality()
+                .equals(other._favCities, _favCities) &&
             (identical(other.cityName, cityName) ||
                 other.cityName == cityName) &&
             (identical(other.initStatus, initStatus) ||
@@ -180,8 +206,8 @@ class _$HomeStateImpl implements _HomeState {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, weatherEntity, cityName, initStatus);
+  int get hashCode => Object.hash(runtimeType, weatherEntity,
+      const DeepCollectionEquality().hash(_favCities), cityName, initStatus);
 
   @JsonKey(ignore: true)
   @override
@@ -193,11 +219,14 @@ class _$HomeStateImpl implements _HomeState {
 abstract class _HomeState implements HomeState {
   const factory _HomeState(
       {final WeatherEntity? weatherEntity,
+      final List<String> favCities,
       final String cityName,
       final BaseStatus<dynamic> initStatus}) = _$HomeStateImpl;
 
   @override
   WeatherEntity? get weatherEntity;
+  @override
+  List<String> get favCities;
   @override
   String get cityName;
   @override

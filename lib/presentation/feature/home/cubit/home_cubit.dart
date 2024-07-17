@@ -24,6 +24,61 @@ class HomeCubit extends Cubit<HomeState> {
     emit(state.copyWith(cityName: cityName));
   }
 
+  Future<void> makeCityFavorite() async {
+    if (state.initStatus.isLoading) {
+      return;
+    }
+
+    final favCity = state.cityName;
+
+    emit(
+      state.copyWith(
+        initStatus: const BaseStatus.loading(),
+      ),
+    );
+
+    if (state.cityName.isEmpty) {
+      emit(
+        state.copyWith(
+          initStatus: const BaseStatus.failure(
+            ResponseError.invalidCityName(),
+          ),
+        ),
+      );
+
+      return;
+    }
+
+    final updatedCitites = [...state.favCities, favCity];
+
+    emit(
+      state.copyWith(
+        initStatus: const BaseStatus.success(),
+        favCities: updatedCitites,
+      ),
+    );
+  }
+
+  Future<void> makeCityUnfavorite(String favCity) async {
+    if (state.initStatus.isLoading) {
+      return;
+    }
+    emit(
+      state.copyWith(
+        initStatus: const BaseStatus.loading(),
+      ),
+    );
+
+    final currentList = [...state.favCities]..remove(favCity);
+
+    emit(
+      state.copyWith(
+        initStatus: const BaseStatus.success(),
+        favCities: currentList,
+      ),
+    );
+  }
+
   Future<void> getCurrentWeather() async {
     if (state.initStatus.isLoading) {
       return;
