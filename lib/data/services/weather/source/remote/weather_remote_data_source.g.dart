@@ -12,11 +12,14 @@ class _WeatherRemoteDataSource implements WeatherRemoteDataSource {
   _WeatherRemoteDataSource(
     this._dio, {
     this.baseUrl,
+    this.errorLogger,
   });
 
   final Dio _dio;
 
   String? baseUrl;
+
+  final ParseErrorLogger? errorLogger;
 
   @override
   Future<WeatherEntity> getCurrentWeather(
@@ -32,24 +35,30 @@ class _WeatherRemoteDataSource implements WeatherRemoteDataSource {
     };
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _result = await _dio
-        .fetch<Map<String, dynamic>>(_setStreamType<WeatherEntity>(Options(
+    final _options = _setStreamType<WeatherEntity>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
     )
-            .compose(
-              _dio.options,
-              '/weather',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(
-                baseUrl: _combineBaseUrls(
-              _dio.options.baseUrl,
-              baseUrl,
-            ))));
-    final _value = WeatherEntity.fromJson(_result.data!);
+        .compose(
+          _dio.options,
+          '/weather',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late WeatherEntity _value;
+    try {
+      _value = WeatherEntity.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
     return _value;
   }
 

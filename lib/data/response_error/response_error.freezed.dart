@@ -196,6 +196,9 @@ class _$ResponseErrorCopyWithImpl<T, $Res, $Val extends ResponseError<T>>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -213,6 +216,9 @@ class __$$NoInternetConnectionImplCopyWithImpl<T, $Res>
   __$$NoInternetConnectionImplCopyWithImpl(_$NoInternetConnectionImpl<T> _value,
       $Res Function(_$NoInternetConnectionImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -449,6 +455,9 @@ class __$$ApiKeyNotFoundImplCopyWithImpl<T, $Res>
   __$$ApiKeyNotFoundImplCopyWithImpl(_$ApiKeyNotFoundImpl<T> _value,
       $Res Function(_$ApiKeyNotFoundImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -684,6 +693,9 @@ class __$$SendTimeoutImplCopyWithImpl<T, $Res>
   __$$SendTimeoutImplCopyWithImpl(
       _$SendTimeoutImpl<T> _value, $Res Function(_$SendTimeoutImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -919,6 +931,9 @@ class __$$ConnectTimeoutImplCopyWithImpl<T, $Res>
   __$$ConnectTimeoutImplCopyWithImpl(_$ConnectTimeoutImpl<T> _value,
       $Res Function(_$ConnectTimeoutImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1154,6 +1169,9 @@ class __$$ReceiveTimeoutImplCopyWithImpl<T, $Res>
   __$$ReceiveTimeoutImplCopyWithImpl(_$ReceiveTimeoutImpl<T> _value,
       $Res Function(_$ReceiveTimeoutImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1389,6 +1407,9 @@ class __$$BadRequestImplCopyWithImpl<T, $Res>
   __$$BadRequestImplCopyWithImpl(
       _$BadRequestImpl<T> _value, $Res Function(_$BadRequestImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1622,6 +1643,9 @@ class __$$NotFoundImplCopyWithImpl<T, $Res>
   __$$NotFoundImplCopyWithImpl(
       _$NotFoundImpl<T> _value, $Res Function(_$NotFoundImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1855,6 +1879,9 @@ class __$$TooManyRequestsImplCopyWithImpl<T, $Res>
   __$$TooManyRequestsImplCopyWithImpl(_$TooManyRequestsImpl<T> _value,
       $Res Function(_$TooManyRequestsImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2090,6 +2117,9 @@ class __$$UnprocessableEntityImplCopyWithImpl<T, $Res>
   __$$UnprocessableEntityImplCopyWithImpl(_$UnprocessableEntityImpl<T> _value,
       $Res Function(_$UnprocessableEntityImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2326,6 +2356,9 @@ class __$$InternalServerErrorImplCopyWithImpl<T, $Res>
   __$$InternalServerErrorImplCopyWithImpl(_$InternalServerErrorImpl<T> _value,
       $Res Function(_$InternalServerErrorImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2562,6 +2595,9 @@ class __$$UnexpectedErrorImplCopyWithImpl<T, $Res>
   __$$UnexpectedErrorImplCopyWithImpl(_$UnexpectedErrorImpl<T> _value,
       $Res Function(_$UnexpectedErrorImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2797,6 +2833,9 @@ class __$$RequestCancelledImplCopyWithImpl<T, $Res>
   __$$RequestCancelledImplCopyWithImpl(_$RequestCancelledImpl<T> _value,
       $Res Function(_$RequestCancelledImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3033,6 +3072,9 @@ class __$$BedCertificateImplCopyWithImpl<T, $Res>
   __$$BedCertificateImplCopyWithImpl(_$BedCertificateImpl<T> _value,
       $Res Function(_$BedCertificateImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3268,6 +3310,9 @@ class __$$ConnectionErrorImplCopyWithImpl<T, $Res>
   __$$ConnectionErrorImplCopyWithImpl(_$ConnectionErrorImpl<T> _value,
       $Res Function(_$ConnectionErrorImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3503,6 +3548,9 @@ class __$$ConflictImplCopyWithImpl<T, $Res>
   __$$ConflictImplCopyWithImpl(
       _$ConflictImpl<T> _value, $Res Function(_$ConflictImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3736,6 +3784,9 @@ class __$$UnauthorizedImplCopyWithImpl<T, $Res>
   __$$UnauthorizedImplCopyWithImpl(
       _$UnauthorizedImpl<T> _value, $Res Function(_$UnauthorizedImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3972,6 +4023,9 @@ class __$$InvalidPasswordErrorImplCopyWithImpl<T, $Res>
   __$$InvalidPasswordErrorImplCopyWithImpl(_$InvalidPasswordErrorImpl<T> _value,
       $Res Function(_$InvalidPasswordErrorImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -4211,6 +4265,9 @@ class __$$InvalidConfirmPasswordErrorImplCopyWithImpl<T, $Res>
       _$InvalidConfirmPasswordErrorImpl<T> _value,
       $Res Function(_$InvalidConfirmPasswordErrorImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -4449,6 +4506,9 @@ class __$$InvalidCityNameErrorImplCopyWithImpl<T, $Res>
   __$$InvalidCityNameErrorImplCopyWithImpl(_$InvalidCityNameErrorImpl<T> _value,
       $Res Function(_$InvalidCityNameErrorImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -4688,6 +4748,9 @@ class __$$InvalidLoginCredentialsImplCopyWithImpl<T, $Res>
       _$InvalidLoginCredentialsImpl<T> _value,
       $Res Function(_$InvalidLoginCredentialsImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -4927,6 +4990,9 @@ class __$$InvalidSearchTermErrorImplCopyWithImpl<T, $Res>
       _$InvalidSearchTermErrorImpl<T> _value,
       $Res Function(_$InvalidSearchTermErrorImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of ResponseError
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc

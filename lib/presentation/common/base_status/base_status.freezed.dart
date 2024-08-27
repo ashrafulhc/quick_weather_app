@@ -102,6 +102,9 @@ class _$BaseStatusCopyWithImpl<T, $Res, $Val extends BaseStatus<T>>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -118,6 +121,9 @@ class __$$InitialImplCopyWithImpl<T, $Res>
   __$$InitialImplCopyWithImpl(
       _$InitialImpl<T> _value, $Res Function(_$InitialImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -251,6 +257,9 @@ class __$$LoadingImplCopyWithImpl<T, $Res>
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl<T> _value, $Res Function(_$LoadingImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -384,6 +393,9 @@ class __$$LazyLoadingImplCopyWithImpl<T, $Res>
   __$$LazyLoadingImplCopyWithImpl(
       _$LazyLoadingImpl<T> _value, $Res Function(_$LazyLoadingImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -517,6 +529,9 @@ class __$$SuccessImplCopyWithImpl<T, $Res>
   __$$SuccessImplCopyWithImpl(
       _$SuccessImpl<T> _value, $Res Function(_$SuccessImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -650,6 +665,9 @@ class __$$ValidImplCopyWithImpl<T, $Res>
   __$$ValidImplCopyWithImpl(
       _$ValidImpl<T> _value, $Res Function(_$ValidImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -783,6 +801,9 @@ class __$$InvalidImplCopyWithImpl<T, $Res>
   __$$InvalidImplCopyWithImpl(
       _$InvalidImpl<T> _value, $Res Function(_$InvalidImpl<T>) _then)
       : super(_value, _then);
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -921,6 +942,8 @@ class __$$FailureImplCopyWithImpl<T, $Res>
       _$FailureImpl<T> _value, $Res Function(_$FailureImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -934,6 +957,8 @@ class __$$FailureImplCopyWithImpl<T, $Res>
     ));
   }
 
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ResponseErrorCopyWith<void, $Res> get error {
@@ -967,7 +992,9 @@ class _$FailureImpl<T> extends Failure<T> {
   @override
   int get hashCode => Object.hash(runtimeType, error);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FailureImplCopyWith<T, _$FailureImpl<T>> get copyWith =>
@@ -1071,7 +1098,10 @@ abstract class Failure<T> extends BaseStatus<T> {
   const Failure._() : super._();
 
   ResponseError<void> get error;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BaseStatus
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FailureImplCopyWith<T, _$FailureImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

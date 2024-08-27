@@ -20,7 +20,9 @@ mixin _$HomeState {
   String get cityName => throw _privateConstructorUsedError;
   BaseStatus<dynamic> get initStatus => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $HomeStateCopyWith<HomeState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +51,8 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -72,6 +76,8 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     ) as $Val);
   }
 
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $WeatherEntityCopyWith<$Res>? get weatherEntity {
@@ -84,6 +90,8 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     });
   }
 
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $BaseStatusCopyWith<dynamic, $Res> get initStatus {
@@ -120,6 +128,8 @@ class __$$HomeStateImplCopyWithImpl<$Res>
       _$HomeStateImpl _value, $Res Function(_$HomeStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -183,7 +193,9 @@ class _$HomeStateImpl implements _HomeState {
   int get hashCode =>
       Object.hash(runtimeType, weatherEntity, cityName, initStatus);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$HomeStateImplCopyWith<_$HomeStateImpl> get copyWith =>
@@ -202,8 +214,11 @@ abstract class _HomeState implements HomeState {
   String get cityName;
   @override
   BaseStatus<dynamic> get initStatus;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$HomeStateImplCopyWith<_$HomeStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
