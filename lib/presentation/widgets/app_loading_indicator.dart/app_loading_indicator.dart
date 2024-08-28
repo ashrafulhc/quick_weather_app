@@ -30,7 +30,7 @@ class AppLoadingIndicator extends StatelessWidget {
   }) {
     return AppLoadingIndicator(
       size: defaultSmallSize,
-      strokeWidth: 2.0,
+      strokeWidth: 2,
       indicatorColor: indicatorColor,
     );
   }
